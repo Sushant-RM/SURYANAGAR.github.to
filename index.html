@@ -4,15 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        .project-description {
-            background-color: green;
-            color: white;
-            padding: 10px;
-            border-radius: 5px;
+        body {
             font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8; /* Soft light blue */
+            color: #333; /* Dark text for contrast */
+            line-height: 1.6;
+        }
+
+        header, section {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            background-color: white; /* Clean white sections */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            border-radius: 10px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #2c3e50; /* Deep blue for headings */
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        .project-description {
+            background-color: #27ae60; /* Green background for emphasis */
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            opacity: 0.9;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #2980b9; /* Vibrant blue */
+            padding: 10px 15px;
+            margin: 5px 0;
+            border-radius: 5px;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .button:hover {
+            background-color: #21618c; /* Slightly darker on hover */
+        }
+
+        blockquote {
+            font-style: italic;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #ecf0f1; /* Light grey */
+            border-left: 5px solid #27ae60; /* Green border */
+            color: #555;
+        }
+
+        dl dt {
+            font-weight: bold;
+            margin-top: 10px;
+            color: #2c3e50; /* Dark blue for emphasis */
+        }
+
+        dl dd {
+            margin: 5px 0 15px 20px;
+        }
+
+        footer {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 0.9rem;
+            color: #7f8c8d; /* Muted grey */
         }
     </style>
 </head>
@@ -22,85 +111,68 @@
         <ul>
             <li>Sushant R Maheshwari</li>
             <li>Aditya Kadwadkar</li>
-            <li>Prajwal Hurakadli</li>
+            <li>Prajwal Hurkadli</li>
             <li>Aditya Belamkar 👋</li>
         </ul>
+    </header>
+
+    <section>
         <h2>🛠 Smart City Designing</h2>
         <ul>
-            <li class="project-description:"></li>
-            <li>
-                <strong>Smart City Designing</strong>: This project involves the conceptualization, design, and development of a Smart City that involves technology, sustainable practices, and data-driven governance to enhance the quality of life for citizens, improve urban efficiency, and drive economic growth. This project is about building a modern city that uses smart technology to make life easier, safer, and greener. It focuses on improving things like transportation, energy use, and public services by using tools like sensors, apps, and clean energy. The goal is to create a city that works better for people and the planet.</strong>
-            </li>
-            <li>
-                <strong></strong>
+            <li class="project-description">
+                <strong>Smart City Designing</strong>: This project involves the conceptualization, design, and development of a Smart City that uses technology, sustainable practices, and data-driven governance to enhance citizens' quality of life, improve urban efficiency, and drive economic growth. The goal is to create a city that works better for people and the planet.
             </li>
         </ul>
-    </header>
+    </section>
+
     <section>
-       
+        <h2>🚀 Skills</h2>
+        <p>We are passionate about technology and problem-solving. Here's a glimpse of our expertise:</p>
         <ul>
-            <header>
-                <h1>🚀 Skills</h1>
-             <p>We are passionate about technology and problem-solving. Here's a glimpse of my work:</p>
-    </header>
             <li>C++, Python</li>
             <li>Data Structures and Algorithms</li>
             <li>Web Development (HTML)</li>
         </ul>
+    </section>
 
-        <h2>🌐 Find Me Online</h2>
+    <section>
+        <h2>🌐 Find Us Online</h2>
         <ul>
-            <li><a href="https://github.com/Sushant-RM" target="_blank">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/sushant-maheshwari-934bab280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn-Sushant</a></li>
-            <li><a href="https://www.linkedin.com/in/aditya-kadwadkar-1684542a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn-Aditya K</a></li>
-
+            <li><a href="https://github.com/Sushant-RM" target="_blank" class="button">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/sushant-maheshwari-934bab280" target="_blank" class="button">LinkedIn - Sushant</a></li>
+            <li><a href="https://www.linkedin.com/in/aditya-kadwadkar-1684542a9" target="_blank" class="button">LinkedIn - Aditya K</a></li>
         </ul>
+    </section>
 
+    <section>
         <h2>Portfolio Topic</h2>
         <dl>             
-    <dt>Course Name</dt>             
-    <dd>Algorithmic Problem Solving</dd>              
-    <dt>Course Code</dt>             
-    <dd>Course Code Placeholder</dd>              
-
-    <dt>Person A</dt>
-    <dd>
-        <strong>Name:</strong> Sushant R Maheshwari <br>
-        <strong>SRN:</strong> 01FE23BCS075 <br>
-        <strong>Course Instructor:</strong> Prakash Hegde Sir<br>
-        <strong>University:</strong> KLE Technological University <br>
-        <strong>Portfolio Topic/Domain:</strong> A's Topic/Domain 
-    </dd>
-
-    <dt>Person B</dt>
-    <dd>
-        <strong>Name:</strong> Aditya Kadwadkar <br>
-        <strong>SRN:</strong> 01FE23BCS152 <br>
-        <strong>Course Instructor:</strong> Prakash Hegde Sir <br>
-        <strong>University:</strong> KLE Technological University <br>
-        <strong>Portfolio Topic/Domain:</strong> B's Topic/Domain 
-    </dd>
-
-    <dt>Person C</dt>
-    <dd>
-        <strong>Name:</strong> Prajwal Hurakadli <br>
-        <strong>SRN:</strong> 01FE23BCS271 <br>
-        <strong>Course Instructor:</strong> C's Prakash Hegde Sir <br>
-        <strong>University:</strong> KLE Technological University <br>
-        <strong>Portfolio Topic/Domain:</strong> C's Topic/Domain 
-    </dd>
-
-    <dt>Person D</dt>
-    <dd>
-        <strong>Name:</strong> Aditya Belamkar <br>
-        <strong>SRN:</strong> 01FE23BCS266 <br>
-        <strong>Course Instructor:</strong> Prakash Hegde Sir <br>
-        <strong>University:</strong> KLE Technological University <br>
-        <strong>Portfolio Topic/Domain:</strong> D's Topic/Domain 
-    </dd>
-</dl>
-
+            <dt>Course Name</dt>             
+            <dd>Algorithmic Problem Solving</dd>              
+            <dt>Course Code</dt>             
+            <dd>Course Code Placeholder</dd>              
+            <dt>Person A</dt>
+            <dd>
+                <strong>Name:</strong> Sushant R Maheshwari <br>
+                <strong>SRN:</strong> 01FE23BCS075 <br>
+                <strong>Course Instructor:</strong> Prakash Hegde Sir<br>
+                <strong>University:</strong> KLE Technological University <br>
+                <strong>Portfolio Topic/Domain:</strong> A's Topic/Domain 
+            </dd>
+            <dt>Person B</dt>
+            <dd>
+                <strong>Name:</strong> Aditya Kadwadkar <br>
+                <strong>SRN:</strong> 01FE23BCS152 <br>
+                <strong>Course Instructor:</strong> Prakash Hegde Sir <br>
+                <strong>University:</strong> KLE Technological University <br>
+                <strong>Portfolio Topic/Domain:</strong> B's Topic/Domain 
+            </dd>
+        </dl>
         <blockquote>“The only way to do great work is to love what you do.” – Steve Jobs</blockquote>
     </section>
+
+    <footer>
+        &copy; 2024 Smart City Portfolio. All rights reserved.
+    </footer>
 </body>
 </html>
