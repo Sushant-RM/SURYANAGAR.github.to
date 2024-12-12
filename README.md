@@ -28,7 +28,7 @@ We are a collaborative team from KLE Technological University:
 
 - **Prajwal Hurakadli**  
   - SRN: `01FE23BCS271`  
-  - Portfolio Topic: Agricultural and Education
+  - Portfolio Topic: Agricultural and Energy
 
 - **Aditya Belamkar**  
   - SRN: `01FE23BCS266`  
