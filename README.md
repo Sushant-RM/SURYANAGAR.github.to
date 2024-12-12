@@ -52,7 +52,7 @@ The **Suryanagar Smart City** project is conceptualized to utilize technological
 
 Explore our individual portfolios and external pages:
 
-- [Sushant's Portfolio](https://sushant-rm.github.io/Sushant-Page-1.github.io/)  
+- [Sushant's Webpage](https://sushant-rm.github.io/Sushant-Page-1.github.io/)  
 - [Aditya Kadwadkar’s Webpage](https://sushant-rm.github.io/Aditya-s-webpage/)  
 - [Aditya Belamkar’s Webpage](https://sushant-rm.github.io/ADITYA-BELAMKAR/)
 
