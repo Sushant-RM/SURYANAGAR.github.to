@@ -21,7 +21,6 @@ We are a collaborative team from KLE Technological University:
 - **Sushant R Maheshwari**  
   - SRN: `01FE23BCS075`  
   - Portfolio Topic: Digital Governance for Cities  
-  - [View Sushant's portfolio](https://sushant-rm.github.io/Sushant-Page-1.github.io/)
 
 - **Aditya Kadwadkar**  
   - SRN: `01FE23BCS152`  
