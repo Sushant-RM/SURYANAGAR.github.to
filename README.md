@@ -33,7 +33,8 @@ We are a collaborative team from KLE Technological University:
 
 - **Aditya Belamkar**  
   - SRN: `01FE23BCS266`  
-  - Portfolio Topic: Education and IT sector advancements
+  - Portfolio Topic: Smart city management systems
+  - 
 
 ---
 
