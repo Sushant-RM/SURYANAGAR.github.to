@@ -56,7 +56,7 @@
 </head>
 <body>
     <header>
-        <h1>SDG 11: Digital Governance in Smart Cities</h1>
+        <h1>Digital Governance in Smart Cities</h1>
     </header>
     <nav>
         <a href="#overview">Overview</a>
@@ -114,6 +114,7 @@
             <h2>Conclusion</h2>
             <p>Digital governance is crucial in achieving SDG 11, as it empowers citizens, enhances transparency, and optimizes city management. With these tools, cities can become more inclusive, sustainable, and efficient for everyone.</p>
         </section>
+    <h1>Implementation of Business Case Studies:</h1>
         <section id="geospatial-digital-twin">
     <h2>Geospatial Mapping, Digital Twin, and Citizen Feedback in Smart Cities</h2>
     <p>To support SDG 11, smart cities utilize various technologies like geospatial mapping, digital twins, and participatory planning to enhance urban governance. Below, we provide simplified explanations of these concepts:</p>
@@ -147,7 +148,178 @@
 
     <p><a href="smart_city_planning_code.zip" target="_blank" class="button">Access Code File</a></p>
 </section>
+<section id="urban-planning-algorithms">
+    <h2>Urban Planning Algorithms for Smart Cities</h2>
+    <p>This section outlines how different algorithms are used for urban planning, addressing air quality monitoring, climate resilience, waste management, and waste collection:</p>
 
+    <h3>1. Air Quality Monitoring using Hashing</h3>
+    <p><strong>Purpose:</strong> Stores and retrieves air quality data efficiently using an unordered_map.</p>
+    <p><strong>How it works:</strong> The `add_data` method adds region-specific air quality data, while `get_data` retrieves it.</p>
+    <p><strong>Example:</strong> `airQualitySystem.get_data("RegionA")` returns air quality details for "RegionA".</p>
+
+    <h3>2. Climate Resilience Planning using Union-Find</h3>
+    <p><strong>Purpose:</strong> Manages connected regions efficiently using Union-Find with path compression and union by rank.</p>
+    <p><strong>How it works:</strong> `union_sets` connects regions, and `find` checks connectivity.</p>
+    <p><strong>Example:</strong> `uf.find(0) == uf.find(1)` returns true if regions 0 and 1 are connected.</p>
+
+    <h3>3. Waste Management using Segment Tree</h3>
+    <p><strong>Purpose:</strong> Efficiently handles range queries and updates on waste levels.</p>
+    <p><strong>How it works:</strong> The `build` method constructs the tree, `query` retrieves range sums, and `update` modifies values.</p>
+    <p><strong>Example:</strong> `segTree.query(1, 3)` calculates the sum of waste levels from zones 1 to 3.</p>
+
+    <h3>4. Waste Collection using DFS</h3>
+    <p><strong>Purpose:</strong> Traverses connected zones using DFS to optimize waste collection paths.</p>
+    <p><strong>How it works:</strong> `add_edge` connects zones, and `dfs` explores connected components.</p>
+    <p><strong>Example:</strong> `wasteCollection.dfs(0)` visits all connected zones starting from node 0.</p>
+
+    <p><strong>Main Flow:</strong> The system starts with Air Quality Monitoring using hashing, then moves to Climate Resilience with Union-Find, Waste Management with Segment Trees, and Waste Collection using DFS.</p>
+
+    <p>This approach demonstrates how these algorithms are applied to address urban planning challenges in smart cities.</p>
+
+    <p><a href="urban_planning_algorithms_code.zip" target="_blank" class="button">Access Code File</a></p>
+</section>
+
+<section id="additional-algorithms">
+    <h2>Additional Algorithms for Smart Cities</h2>
+    <p>This section provides explanations of some essential algorithms used in smart city applications:</p>
+
+    <h3>1. Dijkstra's Algorithm for Smart Transportation</h3>
+    <p><strong>Purpose:</strong> Finds the shortest paths from a starting node to all other nodes in a graph.</p>
+    <p><strong>How it works:</strong> The algorithm processes nodes based on their current shortest known distance and uses a priority queue to prioritize nodes with the smallest distance.</p>
+    <p><strong>Example:</strong> `dijkstra.find_shortest_path(0, graph)` finds shortest paths from node 0.</p>
+
+    <h3>2. Segment Tree for Energy Consumption</h3>
+    <p><strong>Purpose:</strong> Efficiently handles range queries and updates on energy consumption data.</p>
+    <p><strong>How it works:</strong> The `build` method constructs the tree, `query` retrieves sum over a range, and `update` modifies a value.</p>
+    <p><strong>Example:</strong> `energy_tree.query(1, 3)` calculates the sum of energy consumption from zones 1 to 3. `energy_tree.update(2, 100)` updates the energy value at position 2.</p>
+
+    <h3>3. Union-Find for Green Infrastructure</h3>
+    <p><strong>Purpose:</strong> Helps track connected components efficiently.</p>
+    <p><strong>How it works:</strong> The `find` method returns the root of a node, while `union_sets` merges two sets.</p>
+    <p><strong>Example:</strong> `uf.find(0) == uf.find(4)` checks if two parks are connected.</p>
+
+    <p><strong>Main Flow:</strong> The system follows a structured flow: Dijkstra's algorithm for shortest paths in transportation, Segment Tree for energy consumption, and Union-Find for managing connected components in green infrastructure.</p>
+
+    <p>This combination of algorithms helps enhance urban planning, transportation, and infrastructure efficiency in smart cities.</p>
+
+    <p><a href="sandbox:/mnt/data/code_file_dijkstra.cpp" target="_blank" class="button">Access the Code File</a></p>
+</section>
+
+<section id="crisis-management-algorithms">
+    <h2>Crisis Management Algorithms for Smart Cities</h2>
+    <p>This section explains how different algorithms are applied to crisis management in smart cities:</p>
+
+    <h3>1. Early Warning System</h3>
+    <p><strong>Purpose:</strong> Represents IoT-enabled sensors for detecting crises like floods or earthquakes.</p>
+    <p><strong>How it works:</strong> Each sensor checks if its reading exceeds predefined thresholds, triggering alerts if a crisis is detected.</p>
+    <p><strong>Example:</strong> `Sensor(1, 8.0, "Flood")` triggers an alert since the reading exceeds the flood threshold.</p>
+
+    <h3>2. Crisis Mapping</h3>
+    <p><strong>Purpose:</strong> Represents a city grid where crisis areas are marked with levels.</p>
+    <p><strong>How it works:</strong> `update_grid` updates crisis locations on the grid, while `display_map` shows the current crisis map.</p>
+    <p><strong>Example:</strong> `cityMap.update_grid(2, 2, 5)` marks a flood area at coordinates (2, 2) with a crisis level of 5.</p>
+
+    <h3>3. Resilience Dashboard</h3>
+    <p><strong>Purpose:</strong> Tracks resilience metrics like response time, infrastructure health, and readiness.</p>
+    <p><strong>How it works:</strong> `update_metric` adds or updates these metrics.</p>
+    <p><strong>Example:</strong> `dashboard.update_metric("Disaster Response Time", 2.5)` records the response time.</p>
+
+    <h3>4. Union-Find for Green Infrastructure</h3>
+    <p><strong>Purpose:</strong> Tracks connected components efficiently, useful in crisis mapping.</p>
+    <p><strong>How it works:</strong> `union_sets` connects areas in the grid for efficient grouping of crisis-affected regions.</p>
+    <p><strong>Example:</strong> `uf.union_sets(2, 12)` connects area 2 and area 12.</p>
+
+    <h3>5. Dijkstra's Algorithm for Resource Allocation</h3>
+    <p><strong>Purpose:</strong> Finds shortest paths from a resource center to crisis areas using a graph representation.</p>
+    <p><strong>How it works:</strong> The algorithm processes nodes based on their current shortest known distance and uses a priority queue for efficiency.</p>
+    <p><strong>Example:</strong> `dijkstra.find_shortest_path(0, graph)` calculates shortest distances from node 0 to other nodes.</p>
+
+    <p><strong>Main Flow:</strong> The system utilizes Dijkstra's algorithm for shortest path calculations, Union-Find for managing connected crisis regions, Crisis Mapping for grid-based data, Early Warning Systems with IoT sensors, and a Resilience Dashboard to track metrics.</p>
+
+    <p>This combination of algorithms helps improve crisis management and resource allocation in smart cities.</p>
+
+    <p><a href="sandbox:/mnt/data/code_file_crisis.cpp" target="_blank" class="button">Access the Code File</a></p>
+</section>
+
+        <section id="e-governance-platform">
+    <h2>E-Governance Platform for Smart Cities</h2>
+    <p>This section explains how different components of e-governance platforms contribute to public service delivery and decision-making in smart cities:</p>
+
+    <h3>1. E-Governance Platform</h3>
+    <p><strong>Purpose:</strong> Manages grievances, service requests, and public participation in decision-making.</p>
+    <p><strong>Features:</strong></p>
+    <ul>
+        <li><strong>submit_grievance:</strong> Adds grievances with an ID and description.</li>
+        <li><strong>submit_service_request:</strong> Adds service requests with an ID and description.</li>
+        <li><strong>view_grievances:</strong> Displays all submitted grievances.</li>
+        <li><strong>view_service_requests:</strong> Displays all service requests.</li>
+        <li><strong>participate_in_decision:</strong> Allows public feedback for decision-making.</li>
+    </ul>
+
+    <h3>2. Open Data Initiative</h3>
+    <p><strong>Purpose:</strong> Stores and displays urban data metrics like Air Quality, Traffic Congestion, and Waste Management.</p>
+    <p><strong>Features:</strong></p>
+    <ul>
+        <li><strong>update_data:</strong> Adds or updates urban data.</li>
+        <li><strong>view_data:</strong> Displays all the urban data metrics.</li>
+    </ul>
+
+    <h3>3. AI-Powered Policy Design</h3>
+    <p><strong>Purpose:</strong> Uses urban data to generate policy suggestions based on data trends.</p>
+    <p><strong>Features:</strong></p>
+    <ul>
+        <li><strong>analyze_and_create_policy:</strong> Analyzes urban data and suggests policies (e.g., air quality improvements or traffic congestion solutions).</li>
+    </ul>
+
+    <p><strong>Main Flow:</strong> The system starts with E-Governance for managing public service requests and grievances, followed by the Open Data Initiative to gather and display urban metrics, and finally, AI-powered policy design to derive data-driven policy solutions.</p>
+
+    <p>This integration enhances transparency, efficiency, and public participation in smart cities.</p>
+
+    <p><a href="sandbox:/mnt/data/code_file_egovernance.cpp" target="_blank" class="button">Access the Code File</a></p>
+</section>
+
+        <section id="smart-grid-management">
+    <h2>Smart Grid Management for Sustainable Energy Use</h2>
+    <p>This section explains how different components of smart grid systems enhance energy consumption tracking, water management, and renewable energy integration in smart cities:</p>
+
+    <h3>1. Smart Grid</h3>
+    <p><strong>Purpose:</strong> Simulates tracking and managing energy consumption and distribution.</p>
+    <p><strong>Features:</strong></p>
+    <ul>
+        <li><strong>track_consumption:</strong> Records energy consumption for each consumer.</li>
+        <li><strong>total_consumption:</strong> Calculates the total energy consumption from all consumers.</li>
+        <li><strong>distribute_energy:</strong> Simulates the distribution of energy based on consumption.</li>
+        <li><strong>energy_savings:</strong> Simulates the energy savings achieved through smart grid management.</li>
+    </ul>
+
+    <h3>2. Water Management System</h3>
+    <p><strong>Purpose:</strong> Simulates tracking water consumption and managing water levels.</p>
+    <p><strong>Features:</strong></p>
+    <ul>
+        <li><strong>track_water_consumption:</strong> Records water consumption for each consumer.</li>
+        <li><strong>monitor_water_wastage:</strong> Identifies consumers using excessive water.</li>
+        <li><strong>water_conservation:</strong> Simulates water conservation efforts.</li>
+        <li><strong>update_water_level:</strong> Updates the water level of a reservoir.</li>
+    </ul>
+
+    <h3>3. Renewable Energy Integration</h3>
+    <p><strong>Purpose:</strong> Simulates the integration of renewable energy sources (solar and wind) into the grid.</p>
+    <p><strong>Features:</strong></p>
+    <ul>
+        <li><strong>generate_energy:</strong> Records energy generated from solar and wind.</li>
+        <li><strong>integrate_energy:</strong> Distributes renewable energy into the smart grid.</li>
+        <li><strong>total_renewable_energy:</strong> Calculates the total renewable energy generated.</li>
+    </ul>
+
+    <p><strong>Main Flow:</strong> The smart grid system starts by tracking energy and water consumption, then focuses on renewable energy integration for efficient resource management, aiming to reduce waste and promote sustainability.</p>
+
+    <p>This integration helps cities optimize energy use, conserve water, and increase renewable energy adoption, fostering sustainable urban development.</p>
+
+    <p><a href="sandbox:/mnt/data/code_file_smartgrid.cpp" target="_blank" class="button">Access the Code File</a></p>
+</section>
+
+        
+        
     </div>
     <footer>
         &copy; 2024 Digital Governance Insights
